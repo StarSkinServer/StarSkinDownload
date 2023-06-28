@@ -1,0 +1,17 @@
+@font-face {
+    font-family: 'starskin-font';
+    src: url('https://assets.shanrenyi.top/font/porto.ttf');
+  }
+
+  .custom-font {
+    font-family: 'starskin-font', sans-serif;
+  }
+
+@font-face {
+    font-family: 'starskin-cn-font';
+    src: url('https://assets.shanrenyi.top/font/fzytk.ttf');
+  }
+
+  .cn-font {
+    font-family: 'starskin-cn-font', sans-serif;
+  }

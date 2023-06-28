@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+  <meta charset="utf-8">
+  <title>StarSkin | 镜像站</title>
+  <meta name="keywords" content="star skin,星空皮肤站,皮肤站,星空,starskin,minecraft,我的世界,星空皮肤站StarSkin">
+  <meta name="description" content="🎉StarSkin极致的浏览体验 | 高质量的服务水平 | StarSkin出品 必有新品 | 星空皮肤站 StarSkin，致力于为所有Minecraft玩家提供皮肤和披风，支持Github和Microsoft登录。星空皮肤站支持authlib-injector，使用皮肤站账号登录启动器。目前皮肤站这个在不断完善，欢迎大家的加入，同时希望更多的玩家为皮肤站上传更多资源！">
+  <link rel="shortcut icon" href="https://pic-up.star-skin.cn/i/2023/03/06/3d059006-a4e7-0791-3723-f1040a2aa8fe.png">
+  <link rel="icon" type="image/png" href="https://pic-up.star-skin.cn/i/2023/03/06/3d059006-a4e7-0791-3723-f1040a2aa8fe.png" sizes="192x192">
+  <link rel="apple-touch-icon" href="https://pic-up.star-skin.cn/i/2023/03/06/3d059006-a4e7-0791-3723-f1040a2aa8fe.png" sizes="180x180">
+  <link rel="stylesheet" type="text/css" href="https://assets.shanrenyi.top/font/sk/font.css">
+  <script src="https://unpkg.com/vue@3.2.9/dist/vue.global.prod.js"></script>
+  <head>
+
+</head>
+    <style>
+        body {
+            background-image: url("https://ddns.star-skin.cn:3432/f/Dnhp/backgroud.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+
+        .card {
+            width: 1200px;
+            height: 600px;
+            background-color: rgba(26, 27, 27, 0.712);
+            backdrop-filter: blur(10px);
+            border-radius: 10px;
+            flex-direction: column;
+            display: flex;
+            align-items: center;
+        }
+        
+        .cn-font {
+        margin: 1px 0;
+        }
+
+        a:link,
+        a:visited {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+        }
+        
+        a:hover,
+        a:active {
+          color: rgb(255, 255, 255);
+          text-decoration: none;
+        }
+    </style>
+    <!-- 下载框-->
+    <style>
+        .alert-box {
+        display: inline-block;
+        background-color: rgba(31, 236, 140, 0.608);
+        border: 2px solid #2bc97a;
+        padding: 10px;
+        border-radius: 4px;
+        color: #000000;
+        font-weight: bold;
+        width: 1130px;
+        box-shadow: 0 0 5px #34e38c8f;
+        }
+    
+        .exclamation {
+        color: #373938;
+        margin-right: 5px;
+        }
+    </style>
+<body>
+  <div class="card">
+    <p style="font-size:26px;color: #e9e9e9;" class="custom-font">StarSkin 镜像站</p>
+    <div id="app">
+        <p style="font-size: 15px; color: #e9e9e9; text-align: left;" class="cn-font">./</p><p style="font-size: 15px; color: #e9e9e9; text-align: right;" class="cn-font">./</p>
+        <alert-box>
+            <p style="font-size: 15px; color: #e9e9e9; text-align: left;" class="cn-font">文件名</p>
+        </alert-box>
+        <br>
+        <alert-box>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p style="font-size: 15px; color: #e9e9e9; margin-right: 10px; text-align: left;" class="cn-font"><a href="./authlib-injector/">authlib-injector</a></p>
+            </div>
+        </alert-box>
+        <br>
+        <alert-box>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p style="font-size: 15px; color: #e9e9e9; text-align: left;" class="cn-font"><a href="./CustomSkinLoader/">CustomSkinLoader</a></p>
+            </div>
+        </alert-box>
+        <br>
+        <alert-box>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p style="font-size: 15px; color: #e9e9e9; text-align: left;" class="cn-font"><a href="./UniSkinMod/">UniSkinMod</a></p>
+            </div>
+        </alert-box>
+        <br>
+        <alert-box>
+            <div style="display: flex; justify-content: space-between; align-items: center;">
+                <p style="font-size: 15px; color: #e9e9e9; text-align: left;" class="cn-font"><a href="./ExtraList/">ExtraList</a></p>
+            </div>
+        </alert-box>
+    </div>
+</div>
+
+</body>
+
+  <!-- 下载框-->
+  <script>
+    const app = Vue.createApp({});
+  
+    app.component('alert-box', {
+      template: `
+        <div class="alert-box">
+          <slot name="icon"></slot>
+          <slot></slot>
+        </div>
+      `
+    });
+  
+    app.mount('#app');
+  </script>
